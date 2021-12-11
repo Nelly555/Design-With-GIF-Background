@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Starting head-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="siteroot/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>design with gIF background</title> 
+<!--Bootstap4-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!--Google fontAwesome-->
+<link href="vendor/fontawesome/css/all.min.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link rel="stylesheet" href="css/custom.css"> 
+<!--Google Font-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+<body  style="background-color:black;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="hero">
+                    <nav class="navMenu">
+                    <img src="images/logo/logo.png" class="logo">
+                   <a href="#">Home</a>
+                   <a href="#">About</a> 
+                   <a href="#">Contact</a>
+                   <a href="#">Protfolio</a>
+                </nav>
+                <h1>The Magical<br>planet</h1>
+                <button type="button">Explore The Life</button>
+                <div class="indicator">
+                    <span class="active"></span> 
+                    <span class="active"></span>
+                    <span class="active"></span>
+                </div>
+                <div class="cta">
+                    <p>You can Explore more about this planet As Well As Other
+                       planets Found Near Earth</p>
+                    <button type="button">Check Out Mars &#x21fe;</button> 
+                </div>            
+                </div>
+                </div>
+        </div>
+         <!--Start Js-->
+    <script>
+        const buttons = document.querySelectorAll("a");
+        buttons.forEach(btn=>{
+            btn.addEventListener("click", function(e){
+            let x = e.clientX-
+            e.target.offsetleft;
+            let y = e.clientY-
+            e.target.offsetleftTop;
+            let ripples = document.createElement("span");
+            ripples.style.left= x + "px"; 
+            ripples.style.top = y + "px";
+            this.appendChild(ripples);
+            setTimeout(()=>{
+                ripples.remove();
+            },1000);
+
+            })
+        });
+        
+    </script>
+
+
+
+
+
+        <!--JS-->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+
+
+            </div>
+        </body>
+</html>

@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.body{
+    background: #272727;
+    font-family: "Montserrat",sans-serif;
+}
+.hero {
+    min-height: 100vh;
+    width: 100%;
+    background-color:#000;
+    background-image: url(https://i.pinimg.com/originals/79/a3/84/79a384c3c449ad01b0e57e790807b2c0.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    color:#fff;
+    padding: 0 8%;
+}
+.navMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+.logo {
+    width: 140px;
+}
+.navMenu a{
+    color: hsl(253, 93%, 56%);
+    text-decoration: none;
+    font-size: 15.5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: inline-block;
+    width: 60px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.navMenu a:hover {
+    color: #2e6599;
+  }
+ 
+.button{
+    font-size: 10px;
+    border: 0.2px solid yellow;
+    margin: 100px 10px;
+    padding: 10px 30px;
+    background: linear-gradient(90 #99e7fc, #0D4368);
+    outline: none;
+}
+.hero h1{
+    font-size: 75px;
+    margin-top: 12; 
+}
+.hero button{
+    position: relative;
+    left: 5px;
+    border: none;
+    outline: none;
+    background: transparent;
+    overflow: hidden;
+    letter-spacing: 2px;
+    line-height: 40px;
+    transition: all .3s;
+    display: block;
+    text-decoration:none;
+    text-align:center;
+    color: #99e7fc;
+    text-shadow: 0px 2px 5px rgba(0. 0. 0.6);
+    background: linear-gradient(180deg, #122DFF8A, #1c301AD6);
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.indicator span{
+    display: inline-block;
+    background: #3a3a3a;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.indicator{
+    margin-top:100px;
+} 
+.indicator span.active{
+    background: #bfbfbf;
+
+}
+.cta{
+    position: absolute;
+    width: 25%;
+    min-width: 250px;
+    right: 8%;
+    bottom: 100px;
+}
